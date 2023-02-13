@@ -1,0 +1,36 @@
+
+@mixin button($background,$color){
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    box-shadow: $sombra-boton;
+    width: 100px;
+    align-items: center;
+    background-color: $background;
+    color: $color;
+}
+
+@mixin button-large($background,$color){
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    box-shadow: $sombra-boton;
+    width: 200px;
+    align-items: center;
+    background-color: $background;
+    color: $color;
+}
+
+@mixin button-medium($background,$color){
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    box-shadow: $sombra-boton;
+    width: 175px;
+    align-items: center;
+    background-color: $background;
+    color: $color;
+}

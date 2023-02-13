@@ -1,0 +1,28 @@
+.caja-padre-productos{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.caja-producto{
+    width: 200px;
+    color: white;
+    padding: 10px;
+    border: solid;
+    background-color: ghostwhite;
+    @media(max-width:576px){
+        width: 320px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }   
+}
+
+.caja-plans{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(237, 237, 233);
+}
+

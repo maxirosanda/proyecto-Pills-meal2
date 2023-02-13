@@ -1,0 +1,25 @@
+
+.boton-ver-mas{
+    @include button(rgba(3, 102, 102),white);
+    &:hover{
+        background-color: rgba(103, 185, 154);
+    }
+}
+.boton-de-comprar{
+    @include button-medium(rgba(3, 102, 102),white)
+}
+.boton-visitar-sitio{
+    @include button-large(rgba(10, 10, 11, 0.504),white);
+    &:hover{
+        background-color: black;
+    }
+}
+.boton-como-funciona{
+    @include button(rgba(3, 102, 102),white);
+    &:hover{
+        background-color: rgba(103, 185, 154);
+    }
+}
+.visually-hidden{
+    color: black;
+}

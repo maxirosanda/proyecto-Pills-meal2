@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: rgba(36, 130, 119);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font: bolder;
+}
+
+.subtitulos-categoria{
+    color: rgba(36, 130, 119);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 35px;
+    font: bolder;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}  
+
+.parrafo-titulo{
+    padding-right: 60px;
+}
+
+.aboutus{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+.ourstory{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    background-color: rgba(202, 210, 197, 0.303);
+}

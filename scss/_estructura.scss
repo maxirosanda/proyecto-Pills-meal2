@@ -1,0 +1,75 @@
+
+.body-index{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60x 200px 2fr auto 80px;
+    grid-template-areas: "navegador-principal navegador-principal navegador-principal navegador-principal "
+                         "    header                header              header              header        "
+                         "     main                  main                main                main        "
+                         "    aside                  aside               aside               aside    "
+                         "    footer                footer              footer               footer        ";
+            @media(max-width:576px){
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: 70px 200px 200px 80px;
+                grid-template-areas: "navegador-principal navegador-principal navegador-principal navegador-principal "
+                                     "    header                header              header              header        "
+                                     "     main                  main                main                main         "
+                                     "    footer                footer              footer               footer       ";
+                        }           
+            }
+
+.header-index{
+    grid-area: header;
+    background-image:url(../img/header\ appetie.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 60px;
+    height: 300px;
+    @media(max-width:576px){
+        height: 200px;
+    }
+    .header-info{
+        color: white;
+        font-size: 15px;
+        flex-wrap: wrap;
+        width: 650px;
+        @media(max-width:576px){
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        } 
+    }
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgba(47, 62, 70);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    position: relative;
+    padding-top: 15px;
+    color: white;
+    .empresa-footer{
+        @extend %Footer-text;
+    }
+    .contactanos-footer{
+        @extend %Footer-text;
+    }
+    .ayuda-footer{
+        @extend %Footer-text;
+    }
+}
+
+
+

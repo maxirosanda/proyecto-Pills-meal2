@@ -1,0 +1,45 @@
+.navegador-principal{
+    grid-area: navegador-principal;
+    background-color: rgba(47, 62, 70);
+    position: relative;
+    .fa-bars{
+        display: none;
+        @media(max-width:600px){
+            display: block;
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+            &:hover + ul{
+                left: 0;
+            }
+        }
+    }
+    >ul{
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        z-index: 100;
+        @media(max-width:600px){
+            position: absolute;
+            left: -350px;
+            width: 250px;
+            height: 100vh;
+            background-color: blueviolet;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                left: 0;
+            }
+        }
+        >li{
+            >a{
+                display: block;
+                text-decoration: none;
+                padding: 10px 20px;
+                color: white;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+        }
+    }
+}

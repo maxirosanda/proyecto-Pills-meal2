@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(36, 130, 119);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
+  font: bolder;
+}
+
+.subtitulos-categoria {
+  color: rgb(36, 130, 119);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 35px;
+  font: bolder;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.parrafo-titulo {
+  padding-right: 60px;
+}
+
+.aboutus {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+}
+
+.ourstory {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  background-color: rgba(202, 210, 197, 0.303);
+}
+
+.tarjeta-p-como-funciona, .tarjeta-titulo-como, .tarjeta-titulo {
+  font-size: 20px;
+  text-align: center;
+}
+
+footer .ayuda-footer, footer .contactanos-footer, footer .empresa-footer {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+
+.body-index {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 60x 200px 2fr auto 80px;
+  grid-template-areas: "navegador-principal navegador-principal navegador-principal navegador-principal " "    header                header              header              header        " "     main                  main                main                main        " "    aside                  aside               aside               aside    " "    footer                footer              footer               footer        ";
+}
+@media (max-width: 576px) {
+  .body-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 70px 200px 200px 80px;
+    grid-template-areas: "navegador-principal navegador-principal navegador-principal navegador-principal " "    header                header              header              header        " "     main                  main                main                main         " "    footer                footer              footer               footer       ";
+  }
+}
+
+.header-index {
+  grid-area: header;
+  background-image: url(../img/header\ appetie.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 60px;
+  height: 300px;
+}
+@media (max-width: 576px) {
+  .header-index {
+    height: 200px;
+  }
+}
+.header-index .header-info {
+  color: white;
+  font-size: 15px;
+  flex-wrap: wrap;
+  width: 650px;
+}
+@media (max-width: 576px) {
+  .header-index .header-info {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(47, 62, 70);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 12px;
+  position: relative;
+  padding-top: 15px;
+  color: white;
+}
+.navegador-principal {
+  grid-area: navegador-principal;
+  background-color: rgb(47, 62, 70);
+  position: relative;
+}
+.navegador-principal .fa-bars {
+  display: none;
+}
+@media (max-width: 600px) {
+  .navegador-principal .fa-bars {
+    display: block;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+  }
+  .navegador-principal .fa-bars:hover + ul {
+    left: 0;
+  }
+}
+.navegador-principal > ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  z-index: 100;
+}
+@media (max-width: 600px) {
+  .navegador-principal > ul {
+    position: absolute;
+    left: -350px;
+    width: 250px;
+    height: 100vh;
+    background-color: blueviolet;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navegador-principal > ul:hover {
+    left: 0;
+  }
+}
+.navegador-principal > ul > li > a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.tarjeta {
+  width: 250px;
+  height: 410px;
+  padding: 12px;
+  margin: 10px;
+  background-color: beige;
+  border: solid;
+}
+
+.tarjeta-imagen-producto {
+  width: 100%;
+  height: 50%;
+  align-content: center;
+}
+
+.tarjeta-titulo {
+  background-color: rgb(207, 225, 185);
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.619);
+}
+
+.tarjeta-descripcion {
+  font-size: 12px;
+  text-align: center;
+  color: rgb(41, 39, 39);
+  padding: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.tarjeta-como-funciona {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+
+.imagen-como-funciona {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.tarjeta-titulo-como {
+  background-color: aquamarine;
+}
+
+.explanation {
+  background-color: rgb(237, 237, 233);
+}
+
+.tarjetapublicidad {
+  width: 100%;
+  height: 50%;
+  align-content: center;
+}
+
+.caja-padre-productos {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.caja-producto {
+  width: 200px;
+  color: white;
+  padding: 10px;
+  border: solid;
+  background-color: ghostwhite;
+}
+@media (max-width: 576px) {
+  .caja-producto {
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.caja-plans {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(237, 237, 233);
+}
+
+.boton-ver-mas {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  display: block;
+  box-shadow: 2px 6px 5px 0px rgba(173, 152, 152, 0.57);
+  width: 100px;
+  align-items: center;
+  background-color: rgb(3, 102, 102);
+  color: white;
+}
+.boton-ver-mas:hover {
+  background-color: rgb(103, 185, 154);
+}
+
+.boton-de-comprar {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  display: block;
+  box-shadow: 2px 6px 5px 0px rgba(173, 152, 152, 0.57);
+  width: 175px;
+  align-items: center;
+  background-color: rgb(3, 102, 102);
+  color: white;
+}
+
+.boton-visitar-sitio {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  display: block;
+  box-shadow: 2px 6px 5px 0px rgba(173, 152, 152, 0.57);
+  width: 200px;
+  align-items: center;
+  background-color: rgba(10, 10, 11, 0.504);
+  color: white;
+}
+.boton-visitar-sitio:hover {
+  background-color: black;
+}
+
+.boton-como-funciona {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  display: block;
+  box-shadow: 2px 6px 5px 0px rgba(173, 152, 152, 0.57);
+  width: 100px;
+  align-items: center;
+  background-color: rgb(3, 102, 102);
+  color: white;
+}
+.boton-como-funciona:hover {
+  background-color: rgb(103, 185, 154);
+}
+
+.visually-hidden {
+  color: black;
+}
+
+.fotos-doctores {
+  border-radius: 50%;
+  width: 300px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.size-img {
+  height: 150px;
+  width: 150px;
+}
+
+.video-pills {
+  width: 560px;
+  height: 315px;
+}
+
+.img-desde-arriba {
+  width: 100%;
+  height: 50%;
+}
+
+.pill-violet {
+  transition: 2s;
+}
+.pill-violet:hover {
+  transform: scale(1.5);
+}
+
+.pill-yellow {
+  transition: 2s;
+}
+.pill-yellow:hover {
+  transform: scale(1.5);
+}
+
+.pill-green {
+  transition: 2s;
+}
+.pill-green:hover {
+  transform: scale(1.5);
+}
+
+.pill-turquesa {
+  transition: 2s;
+}
+.pill-turquesa:hover {
+  transform: scale(1.5);
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.095);
+  z-index: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading > i {
+  color: rgb(50, 47, 47);
+  font-size: 64px;
+  animation-name: rotate;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.circulo-pill:hover {
+  transition: 1.5s;
+  transform: rotate(360deg);
+}/*# sourceMappingURL=style.css.map */
